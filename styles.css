@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.logo svg{
+    height: 37px;
+    fill: rgb(229,9,20);
+}
+header div+div{
+    text-align: right;
+
+}
+header select{
+    background-color: transparent;
+    color:white;
+    padding: 6px 17px;
+    border-radius: 3px;
+    text-align: center;
+}
+header a.button{
+    background-color: rgb(229,9,20);
+    color:white;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 7px 17px;
+    display: inline-block;
+    margin-left: 5px;
+}
+header div.select{
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+}
+header div.select svg{
+    height:20px;
+    fill : black;
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    margin-left: 2px;
+    padding-left: 2px;
+}
+div.splash {
+    position: relative;
+}
+div.splash div.gradient{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgb(0 0 0 / 80%) 100%);
+    position: absolute;
+    inset: 0;
+}
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+div.splash div.content{
+    position:absolute;
+    inset: 0;
+    display:grid;
+    align-items: center;
+    text-align: center;
+    max-width: 655px;
+    
+    margin: 0 auto;
+}
+div.splash h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+div.splash p{
+    font-size: 1.5rem;
+    margin: 1rem 0 0;
+}
+div.splash h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin:1.5rem 0 0;
+}
+div.splash form{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 8.82%;
+    margin-top: 10px;
+}
+div.splash input{
+    display:inline-block;
+    width: 150%;
+    margin-right: 10px;
+    padding: 1.5rem 1rem 0.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+   
+} 
+div.splash span{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #aaa;
+
+}
+div.splash button{
+    margin-left: 130px;
+    width: 203px;
+    background-color: red;
+    color: white;
+    font-size:1.5rem ;
+    border-radius: 6px;
+    font-weight: 549;
+    height: 102%;
+    
+    
+}
+
+
+div.splash input ~ span{
+    transition: all 0.8sec ease;
+}
+
+div.splash input:focus ~ span{
+    top: 2px;
+    font-size: 0.8rem;
+    
+}
+section{
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    
+ 
+    padding: 70px 35px;
+}
+.part1{
+    align-items: center;
+    display: flex;
+    border-top: 6px solid #303030;
+    
+}
+.texts{
+    padding: 3.5rem 0;
+}
+div.texts h1{
+    display: block;
+    font-size:3rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 50px;
+    font-weight: bold;
+   
+
+    
+}
+div.texts p{
+    
+    font-size: 1.6rem;
+    
+}
+
+
+.medias1{
+    width: 700px;
+    position: relative;
+    right: 0;
+    
+    display: flex;
+    justify-content: end;
+    margin-left: 10%;
+
+}
+.medias1 img{
+    width: 100%;
+    
+}
+.medias1 video{
+    position: absolute;
+    top: 19%;
+    left: 13%;
+    z-index:-1;
+    width: 75%;
+    
+}
+.medias2 img {
+    width: 100%;
+    position: relative;
+
+}
+
+.medias3 {
+    width: 100%;
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: end;
+
+
+}
+.medias3 img{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    flex-basis: 50%;
+    align-items: center;
+
+}
+
+
+.part2{
+    width: 100%;
+    display: flex;
+    border-top: 6px solid #303030;
+}
+ .texts2{
+    justify-content: end;
+ }
+ .part3{
+    display: flex;
+    width: 100%;
+    border-top: 6px solid #303030;
+    
+ }
+ .part3 h1 ~ p{
+    display: flex;
+    flex-basis: 50%;
+ }
+ .medias3{
+    display: flex;
+ }
+ .part4{
+    display: flex;
+    width: 200%;
+    border-top: 6px solid #303030;
+    flex-basis: 100%;
+    justify-content: space-between;
+ }
+ .part4 img{
+    display: flex;
+    flex-basis: 40%;
+
+ }
+ .texts4 h1{
+    display: flex;
+    margin-left: 30%;
+}
+div.texts4 h1{
+    display: flex;
+    font-size:3rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 50px;
+    font-weight: bold;
+}
+div.texts4 p{
+    
+    font-size: 1.6rem;
+}
+.box {
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;  
+    height:95px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 8%;
+    width: 300px;
+    left: 25%;
+    gap: 15px;
+    background-color: #000;
+    
+
+}
+.box img{
+    display: flex;
+    width: 28%;
+    height: 90%;    
+
+}
+.downloadicon{
+    height: 90px;
+    width:59%;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+}
+.medias3 video{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    top: 6%;
+    width: 80%;
+    left: 43%;
+    max-width: 43%;
+     
+}
+
+.faq{
+    
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    justify-content: center;
+   
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    top: 10%;
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content:  '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+
+input[type="checkbox"]{
+    display: none;
+
+}
+input[type="checkbox"]::after + .content1{
+    display: none;
+}
+
+.content1 {
+    background-color: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow:hidden;
+
+}
+.accordion input[type="checkbox"]:checked + label + .content1{
+    max-height:600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="checkbox"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.secfaq{
+    justify-content: center;
+    border-top: 6px solid #303030;
+}
+div.finalform form{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 8.82%;
+    margin-top: 10px;
+    justify-content: center;
+}
+div.finalform input{
+    display:inline-block;
+    width: 150%;
+    margin-right: 10px;
+    padding: 1.5rem 1rem 0.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+   
+} 
+div.finalform span{
+    position: absolute;
+    left: 13%;
+    top: 15px;
+    color: #aaa;
+
+}
+div.finalform button{
+    margin-left: 130px;
+    width: 203px;
+    background-color: red;
+    color: white;
+    font-size:1.5rem ;
+    border-radius: 6px;
+    font-weight: 549;
+    height: 102%;
+    
+    
+}
+
+
+div.finalform input ~ span{
+    transition: all 0.8sec ease;
+}
+
+div.finalform input:focus ~ span{
+    top: 2px;
+    font-size: 0.8rem;
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #303030;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 10px; 
+    font-weight: 400;
+    margin-bottom: 30;
+
+}
+.col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom: 23px;
+
+}
+.col a{
+    display:block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 0 ; 
+    justify-content: space-between;
+}
